@@ -1,15 +1,3 @@
-import streamlit as st
-from src.extraction import load_data
-
-st.ser_page_config(layout="wide")
-
-def min ():
-    df = load_data()
-    st.dataframe(df)
-
-if __name__ == '__main__':
-    main()
-
 def create_dataframe_section(df):
     st.title("Database Section")
 
@@ -42,6 +30,7 @@ def create_dataframe_section(df):
 
     return None
 
+
 def create_answers_section(df):
     st.title("Main Questions Answers")
 
@@ -65,3 +54,4 @@ def create_answers_section(df):
     st.subheader("Which bikes are good for buying?")
     
     return None
+
